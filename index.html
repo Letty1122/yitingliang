@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yiting Liang's academic portfolio in autonomous robotics, robot perception, computer vision, and robust control.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Yiting Liang — Robotics Research Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23111111'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='serif' font-size='28' fill='white'%3EYL%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Yiting Liang, home"><span>YL</span> Yiting Liang</a>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Robotics researcher · Sydney, Australia</p>
+        <h1>Yiting Liang</h1>
+        <h2 class="hero-title">Autonomous Robotics · Computer Vision · Robust Control</h2>
+        <p class="lede">Master of Engineering Science in Robotics at UNSW, working across autonomous systems, computer vision, robust control and machine learning.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">Explore my work</a>
+          <a class="button secondary" href="assets/Yiting-Liang-CV.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <aside class="research-console reveal" aria-label="Research profile">
+        <div class="console-head">Research profile</div>
+        <ul>
+          <li><span>01</span> Autonomous robotics</li>
+          <li><span>02</span> Vision-guided control</li>
+          <li><span>03</span> Robust, low-cost systems</li>
+        </ul>
+        <div class="metric-row"><div><strong>86.5</strong><small>UNSW WAM</small></div><div><strong>10 mm</strong><small>Landing error</small></div><div><strong>89%</strong><small>CV accuracy</small></div></div>
+      </aside>
+    </section>
+
+    <section class="marquee" aria-label="Technical skills"><div>ROS 2 <span>·</span> Python <span>·</span> C++ <span>·</span> MATLAB <span>·</span> Gazebo <span>·</span> Computer Vision <span>·</span> Robust Control <span>·</span> Deep Learning</div></section>
+
+    <section class="section research" id="research">
+      <div class="section-heading reveal"><p class="eyebrow">Research direction</p><h2>From perception to dependable autonomy.</h2></div>
+      <div class="research-grid">
+        <article class="research-card reveal"><span class="card-no">01</span><h3>Robust vision-guided control</h3><p>Combining probabilistic perception with adaptive control to handle uncertainty, occlusion, lighting variation and external disturbances.</p></article>
+        <article class="research-card reveal"><span class="card-no">02</span><h3>Adaptive robot learning</h3><p>Exploring sample-efficient learning and simulation-to-reality transfer for controllers that generalise beyond a single test environment.</p></article>
+        <article class="research-card reveal"><span class="card-no">03</span><h3>Low-cost autonomous systems</h3><p>Designing lightweight perception and control pipelines that run on accessible hardware without external infrastructure.</p></article>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-heading reveal"><p class="eyebrow">Selected projects</p><h2>Research made tangible.</h2></div>
+
+      <article class="feature feature-video reveal">
+        <div class="media-wrap">
+          <video controls preload="metadata" poster="assets/quadcopter-poster.webp" playsinline>
+            <source src="assets/quadcopter-landing.mp4" type="video/mp4">
+          </video>
+          <span class="media-label">Real-world experiment · 00:46</span>
+        </div>
+        <div class="feature-copy">
+          <p class="project-meta">Master's research · 2025–2026</p>
+          <h3>Autonomous Quadcopter Docking & Charging</h3>
+          <p>A low-cost, infrastructure-independent landing system built with ROS 2 and Gazebo. A nested ArUco-marker perception strategy, nonlinear disturbance observer and adaptive SMC-based controller support precise landing under ground effect and lateral wind.</p>
+          <div class="results"><div><strong>≤10 mm</strong><span>position error</span></div><div><strong>100%</strong><span>tested landing success</span></div></div>
+          <ul class="tags"><li>ROS 2</li><li>ArUco</li><li>SMC</li><li>Gazebo</li></ul>
+        </div>
+      </article>
+
+      <article class="feature feature-video reverse reveal">
+        <div class="media-wrap portrait-media">
+          <video controls preload="metadata" poster="assets/micromouse-poster.webp" playsinline>
+            <source src="assets/micromouse-demo.mp4" type="video/mp4">
+          </video>
+          <span class="media-label">Maze navigation demo · 00:59</span>
+        </div>
+        <div class="feature-copy">
+          <p class="project-meta">Robotics design · 2025</p>
+          <h3>Micromouse Maze-Navigation Robot</h3>
+          <p>Autonomous mapping and shortest-path navigation using Flood Fill and BFS. PID motor control was tuned for stable movement across uneven maze surfaces, supported by full hardware assembly and system debugging.</p>
+          <ul class="tags"><li>Flood Fill</li><li>BFS</li><li>PID</li><li>Embedded systems</li></ul>
+        </div>
+      </article>
+
+      <div class="project-pair">
+        <article class="project-card reveal">
+          <img src="assets/remote-sensing.webp" alt="Remote-sensing classification workflow comparing machine learning and deep learning" loading="lazy">
+          <div class="project-card-copy"><p class="project-meta">Computer vision · 2025</p><h3>Remote Sensing Image Classification</h3><p>Compared handcrafted-feature Random Forest models with fine-tuned ResNet18 and EfficientNet across 15 aerial scene categories.</p><div class="result-line"><strong>89%</strong> test accuracy · <strong>+17 pp</strong> over traditional methods</div><ul class="tags"><li>PyTorch</li><li>EfficientNet</li><li>HOG / LBP / GLCM</li></ul></div>
+        </article>
+        <article class="project-card reveal">
+          <img src="assets/rgbd-segmentation.webp" alt="RGB-D images, depth maps and semantic segmentation results" loading="lazy">
+          <div class="project-card-copy"><p class="project-meta">3D perception · 2023</p><h3>GNN for RGB-D Semantic Segmentation</h3><p>Converted RGB-D input into HHA-encoded point clouds, built graph structures with KNN, and applied graph neural networks to indoor semantic segmentation.</p><ul class="tags"><li>GNN</li><li>RGB-D</li><li>HHA</li><li>Point clouds</li></ul></div>
+        </article>
+      </div>
+
+      <article class="applied reveal">
+        <img src="assets/plc-system.webp" alt="Rockwell Logix5000 PLC hardware used during the industrial automation internship" loading="lazy">
+        <div><p class="project-meta">Applied systems</p><h3>From robot arms to factory automation</h3><div class="applied-list"><section><h4>Vision-Guided 6-DOF Manipulator</h4><p>Homography and ArUco calibration, custom inverse kinematics, artificial potential field path planning and RTDE control for precise pick-and-place.</p></section><section><h4>Industrial Automation Algorithms</h4><p>Built a millisecond-level software SOE module for Logix5000 PLCs and Python routing algorithms for automotive PBS conveyor scheduling.</p></section></div></div>
+      </article>
+    </section>
+
+    <section class="section experience" id="experience">
+      <div class="section-heading reveal"><p class="eyebrow">Background</p><h2>Academic & professional journey.</h2></div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><time>2024—2026</time><div><p class="project-meta">University of New South Wales · Sydney</p><h3>Master of Engineering Science — Robotics</h3><p>Completed with an 86.5 WAM. Coursework includes Advanced Autonomous Systems, Control of Robotic Systems, Robust & Linear Control, Computer Vision and Robotics.</p></div></article>
+        <article class="timeline-item reveal"><time>2024</time><div><p class="project-meta">Beijing Tianyu Zhiyuan Technology</p><h3>PLC Programming & Python Algorithm Intern</h3><p>Developed event-recording logic, HMI data workflows and dynamic route scheduling for industrial control systems.</p></div></article>
+        <article class="timeline-item reveal"><time>2020—2024</time><div><p class="project-meta">Capital Normal University · Beijing</p><h3>Bachelor of Engineering — Artificial Intelligence</h3><p>Built foundations in machine learning, operating systems, algorithms, natural language processing and intelligent robot simulation.</p></div></article>
+      </div>
+      <div class="honours reveal"><span>Awards</span><p>Third Prize, University-Level Programming Competition · Third-Class Scholarship</p></div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-inner reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s build dependable autonomy.</h2>
+        <p>I am interested in research opportunities and collaborations in autonomous robotics, perception and robust control.</p>
+        <a class="email-link" href="mailto:YitingLiang1122@outlook.com">YitingLiang1122@outlook.com <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© <span id="year"></span> Yiting Liang</p><a href="#top">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
