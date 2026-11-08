@@ -17,7 +17,7 @@
     <nav class="nav" aria-label="Primary navigation">
       <a href="#research">Research</a>
       <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -35,13 +35,13 @@
           <!-- <p class="eyebrow">Robotics researcher · Sydney, Australia</p> -->
           <h1>Yiting Liang</h1>
           <h2 class="hero-title">Autonomous Robotics · Computer Vision · Robust Control</h2>
-          <a class="email-link" href="mailto:YitingLiang1122@outlook.com">YitingLiang1122@outlook.com <span aria-hidden="true">↗</span></a>
+          <a class="email-link" style="margin-top:0.6rem; display:inline-block;" href="mailto:YitingLiang1122@outlook.com">YitingLiang1122@outlook.com <span aria-hidden="true">↗</span></a>
         </div>
       </div>
 
-      <!-- 第二行：左侧research profile，右侧简介+按钮 -->
       <div style="display:flex; align-items:flex-start; gap:3rem; flex-wrap:wrap;">
-        <aside class="research-console reveal" aria-label="Research profile" style="flex:0 0 auto;">
+        <!-- flex:0 0 24rem; 设置面板固定宽度，加宽profile盒子 -->
+        <aside class="research-console reveal" aria-label="Research profile" style="flex:0 0 24rem;">
           <div class="console-head">Research profile</div>
           <ul>
             <li><span>01</span> Autonomous robotics</li>
@@ -62,6 +62,7 @@
           </div>
         </div>
       </div>
+      
     </section>
 
 
@@ -103,7 +104,7 @@
 
           <!-- 右侧栏：文字内容（保持不变） -->
           <div class="feature-copy">
-            <span class="card-no" style="position:absolute;top:0.75rem;left:0.75rem;margin:0;z‑index:10;">01</span>
+            <!-- <span class="card-no" style="position:absolute;top:0.75rem;left:0.75rem;margin:0;z‑index:10;">01</span> -->
             <p class="project-meta">01 Master's research · 2025–2026</p>
             <h3>Autonomous Quadcopter Docking & Charging</h3>
             <p>A low‑cost, infrastructure‑independent landing system built with ROS 2 and Gazebo. A nested ArUco‑marker perception strategy, nonlinear disturbance observer and adaptive SMC‑based controller support precise landing under ground effect and lateral wind.</p>
@@ -132,7 +133,7 @@
           <span class="media-label">Maze navigation demo · 00:52</span>
         </div>
         <div class="feature-copy">
-          <span class="card-no" style="position:absolute;top:0.75rem;left:0.75rem;margin:0;z‑index:10;">02</span>
+          <!-- <span class="card-no" style="position:absolute;top:0.75rem;left:0.75rem;margin:0;z‑index:10;">02</span> -->
           <p class="project-meta">02 Robotics design · 2025</p>
           <h3>Micromouse Maze-Navigation Robot</h3>
           <p>Autonomous mapping and shortest-path navigation using Flood Fill and BFS. PID motor control was tuned for stable movement across uneven maze surfaces, supported by full hardware assembly and system debugging.</p>
