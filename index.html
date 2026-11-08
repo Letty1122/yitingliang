@@ -26,19 +26,19 @@
 
 
     <section class="hero" id="top">
-      <!-- 上层：左头像｜中间姓名标题｜右侧profile，横向一行 -->
-      <div style="display:flex; align-items:center; gap:2rem; flex-wrap:wrap; margin-bottom:1.8rem;">
+      <!-- 上层：左头像｜中间姓名标题｜右侧profile，横向一行，占满整宽 -->
+      <div style="display:flex; align-items:center; justify-content:space-between; width:100%; gap:2rem; flex-wrap:wrap; margin-bottom:1.8rem;">
         <div class="hero-photo reveal" style="flex:0 0 auto;">
           <img src="assets/Yiting-Liang.jpg" alt="Yiting Liang portrait" style="width:9rem;max-width:100%;object-fit:cover;border-radius:0.5rem;">
         </div>
 
-        <div class="hero-title-block reveal">
+        <div class="hero-title-block reveal" style="flex:0 0 auto;">
           <p class="eyebrow">Robotics researcher · Sydney, Australia</p>
           <h1>Yiting Liang</h1>
           <h2 class="hero-title">Autonomous Robotics · Computer Vision · Robust Control</h2>
         </div>
 
-        <aside class="research-console reveal" aria-label="Research profile">
+        <aside class="research-console reveal" aria-label="Research profile" style="flex:0 0 auto;">
           <div class="console-head">Research profile</div>
           <ul>
             <li><span>01</span> Autonomous robotics</li>
@@ -52,7 +52,7 @@
         </aside>
       </div>
 
-      <!-- 下层：简介+按钮，单独完整一行，不参与横向并排 -->
+      <!-- 下层：简介+按钮，单独完整一行 -->
       <div class="hero-copy reveal">
         <p class="lede">Master of Engineering Science in Robotics at UNSW and a Bachelor of Engineering in Artificial Intelligence from Capital Normal University, working across autonomous robotics, computer vision, robust control and machine learning.</p>
         <div class="hero-actions">
