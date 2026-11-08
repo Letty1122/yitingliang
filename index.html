@@ -28,7 +28,7 @@
         <p class="eyebrow">Robotics researcher · Sydney, Australia</p>
         <h1>Yiting Liang</h1>
         <h2 class="hero-title">Autonomous Robotics · Computer Vision · Robust Control</h2>
-        <p class="lede">Master of Engineering Science in Robotics at UNSW and a Bachelor of Engineering in Artificial Intelligence from Capital Normal University, working across autonomous systems, computer vision, robust control and machine learning.</p>
+        <p class="lede">Master of Engineering Science in Robotics at UNSW and a Bachelor of Engineering in Artificial Intelligence from Capital Normal University, working across autonomous robotics, computer vision, robust control and machine learning.</p>
         <div class="hero-actions">
           <a class="button primary" href="#projects">Explore my work</a>
           <a class="button secondary" href="assets/Yiting-Liang-CV.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
@@ -48,7 +48,7 @@
     <section class="marquee" aria-label="Technical skills"><div>ROS 2 <span>·</span> Python <span>·</span> C++ <span>·</span> MATLAB <span>·</span> Gazebo <span>·</span> Computer Vision <span>·</span> Robust Control <span>·</span> Deep Learning</div></section>
 
     <section class="section research" id="research">
-      <div class="section-heading reveal"><p class="eyebrow">Research direction</p><h2>From perception to dependable autonomy.</h2></div>
+      <div class="section-heading reveal"><p class="eyebrow">From perception to dependable autonomy.</p><h2>Research direction</h2></div>
       <div class="research-grid">
         <article class="research-card reveal"><span class="card-no">01</span><h3>Robust vision-guided control</h3><p>Combining probabilistic perception with adaptive control to handle uncertainty, occlusion, lighting variation and external disturbances.</p></article>
         <article class="research-card reveal"><span class="card-no">02</span><h3>Adaptive robot learning</h3><p>Exploring sample-efficient learning and simulation-to-reality transfer for controllers that generalise beyond a single test environment.</p></article>
@@ -56,24 +56,33 @@
       </div>
     </section>
 
-    <section class="section projects" id="projects">
-      <div class="section-heading reveal"><p class="eyebrow">Selected projects</p><h2>Research made tangible.</h2></div>
+  <section class="section projects" id="projects">
+        <div class="section-heading reveal"><p class="eyebrow">Research made tangible.</p><h2>Research experience</h2></div>
+        <article class="feature feature-video reveal">
+          <div class="media-wrap" style="position:relative;">
+            <!-- 卡片左上角编号，复用网站已有的 card‑no 样式 -->
+            <span class="card-no" style="position:absolute;top:0.75rem;left:0.75rem;margin:0;z-index:10;">01</span>
+            <video controls preload="metadata" poster="assets/quadcopter-poster.webp" playsinline>
+              <source src="assets/quadcopter-landing.mp4" type="video/mp4">
+            </video>
+            <span class="media-label">Real‑world experiment · 00:46</span>
+          </div>
+          <!-- 第二个风扰视频，放在第一个media-wrap下方，共用media-wrap样式 -->
+          <div class="media-wrap" style="margin-top:1rem;">
+            <video controls preload="metadata" poster="assets/quadcopter‑landing‑wind‑poster.webp" playsinline>
+              <source src="assets/quadcopter‑landing‑wind.mp4" type="video/mp4">
+            </video>
+            <span class="media-label">Wind‑disturbance test · 00:32</span>
+          </div>
 
-      <article class="feature feature-video reveal">
-        <div class="media-wrap">
-          <video controls preload="metadata" poster="assets/quadcopter-poster.webp" playsinline>
-            <source src="assets/quadcopter-landing.mp4" type="video/mp4">
-          </video>
-          <span class="media-label">Real-world experiment · 00:46</span>
-        </div>
-        <div class="feature-copy">
-          <p class="project-meta">Master's research · 2025–2026</p>
-          <h3>Autonomous Quadcopter Docking & Charging</h3>
-          <p>A low-cost, infrastructure-independent landing system built with ROS 2 and Gazebo. A nested ArUco-marker perception strategy, nonlinear disturbance observer and adaptive SMC-based controller support precise landing under ground effect and lateral wind.</p>
-          <div class="results"><div><strong>≤10 mm</strong><span>position error</span></div><div><strong>100%</strong><span>tested landing success</span></div></div>
-          <ul class="tags"><li>ROS 2</li><li>ArUco</li><li>SMC</li><li>Gazebo</li></ul>
-        </div>
-      </article>
+          <div class="feature-copy">
+            <p class="project-meta">Master's research · 2025–2026</p>
+            <h3>Autonomous Quadcopter Docking & Charging</h3>
+            <p>A low‑cost, infrastructure‑independent landing system built with ROS 2 and Gazebo. A nested ArUco‑marker perception strategy, nonlinear disturbance observer and adaptive SMC‑based controller support precise landing under ground effect and lateral wind.</p>
+            <div class="results"><div><strong>≤10 mm</strong><span>position error</span></div><div><strong>100%</strong><span>tested landing success</span></div></div>
+            <ul class="tags"><li>ROS 2</li><li>ArUco</li><li>SMC</li><li>Gazebo</li></ul>
+          </div>
+        </article>
 
       <article class="feature feature-video reverse reveal">
         <div class="media-wrap portrait-media">
