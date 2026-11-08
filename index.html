@@ -81,23 +81,23 @@
   <section class="section projects" id="projects">
         <div class="section-heading reveal"><p class="eyebrow">Research made tangible.</p><h2>Research experience</h2></div>
         <article class="feature feature-video reveal">
-          <!-- 左侧栏：全部视频放在同一个 media‑wrap 容器内 -->
-          <div class="media-wrap" style="position:relative;">
-            <!-- 悬浮在视频区块左上角编号01 -->
-            <span class="card-no" style="position:absolute;top:0.75rem;left:0.75rem;margin:0;z-index:10;">01</span>
+          <div>
+            <!-- 第一个视频独立media-wrap -->
+            <div class="media-wrap" style="position:relative;aspect‑ratio:16/9;">
+              <span class="card-no" style="position:absolute;top:0.75rem;left:0.75rem;margin:0;z‑index:10;">01</span>
+              <video controls preload="metadata" poster="assets/quadcopter-poster.webp" playsinline>
+                <source src="assets/quadcopter‑landing.mp4" type="video/mp4">
+              </video>
+              <span class="media‑label">Real‑world experiment · 00:46</span>
+            </div>
 
-            <!-- 第一个视频 -->
-            <video controls preload="metadata" poster="assets/quadcopter-poster.webp" playsinline>
-              <source src="assets/quadcopter-landing.mp4" type="video/mp4">
-            </video>
-            <span class="media-label">Real‑world experiment · 00:46</span>
-
-            <!-- 第二个风扰视频，在同一个盒子内部，上方留间距 -->
-            <div style="margin-top:1rem;"></div>
-            <video controls preload="metadata" poster="assets/quadcopter‑landing‑wind‑poster.webp" playsinline>
-              <source src="assets/quadcopter-landing-wind.mp4" type="video/mp4">
-            </video>
-            <span class="media-label">Wind‑disturbance test · 00:32</span>
+            <!-- 第二个视频独立media-wrap，上方留1rem间距 -->
+            <div class="media-wrap" style="position:relative;aspect‑ratio:16/9;margin‑top:1rem;">
+              <video controls preload="metadata" poster="assets/quadcopter‑landing‑wind‑poster.webp" playsinline>
+                <source src="assets/quadcopter‑landing‑wind.mp4" type="video/mp4">
+              </video>
+              <span class="media‑label">Wind‑disturbance test · 00:19</span>
+            </div>
           </div>
 
           <!-- 右侧栏：文字内容（保持不变） -->
