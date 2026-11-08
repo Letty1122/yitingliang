@@ -59,31 +59,43 @@
   <section class="section projects" id="projects">
         <div class="section-heading reveal"><p class="eyebrow">Research made tangible.</p><h2>Research experience</h2></div>
         <article class="feature feature-video reveal">
+          <!-- 左侧栏：全部视频放在同一个 media‑wrap 容器内 -->
           <div class="media-wrap" style="position:relative;">
-            <!-- 卡片左上角编号，复用网站已有的 card‑no 样式 -->
-            <span class="card-no">01</span><h3></h3>
+            <!-- 悬浮在视频区块左上角编号01 -->
             <span class="card-no" style="position:absolute;top:0.75rem;left:0.75rem;margin:0;z-index:10;">01</span>
+
+            <!-- 第一个视频 -->
             <video controls preload="metadata" poster="assets/quadcopter-poster.webp" playsinline>
               <source src="assets/quadcopter-landing.mp4" type="video/mp4">
             </video>
             <span class="media-label">Real‑world experiment · 00:46</span>
-          </div>
-          <!-- 第二个风扰视频，放在第一个media-wrap下方，共用media-wrap样式
-          <div class="media-wrap" style="margin-top:1rem;">
+
+            <!-- 第二个风扰视频，在同一个盒子内部，上方留间距 -->
+            <div style="margin-top:1rem;"></div>
             <video controls preload="metadata" poster="assets/quadcopter‑landing‑wind‑poster.webp" playsinline>
               <source src="assets/quadcopter-landing-wind.mp4" type="video/mp4">
             </video>
             <span class="media-label">Wind‑disturbance test · 00:32</span>
-          </div> -->
+          </div>
 
+          <!-- 右侧栏：文字内容（保持不变） -->
           <div class="feature-copy">
             <p class="project-meta">Master's research · 2025–2026</p>
             <h3>Autonomous Quadcopter Docking & Charging</h3>
             <p>A low‑cost, infrastructure‑independent landing system built with ROS 2 and Gazebo. A nested ArUco‑marker perception strategy, nonlinear disturbance observer and adaptive SMC‑based controller support precise landing under ground effect and lateral wind.</p>
-            <div class="results"><div><strong>≤10 mm</strong><span>position error</span></div><div><strong>100%</strong><span>tested landing success</span></div></div>
-            <ul class="tags"><li>ROS 2</li><li>ArUco</li><li>SMC</li><li>Gazebo</li></ul>
+            <div class="results">
+              <div><strong>≤10 mm</strong><span>position error</span></div>
+              <div><strong>100%</strong><span>tested landing success</span></div>
+            </div>
+            <ul class="tags">
+              <li>ROS 2</li>
+              <li>ArUco</li>
+              <li>SMC</li>
+              <li>Gazebo</li>
+            </ul>
           </div>
         </article>
+
 
       <article class="feature feature-video reverse reveal">
         <div class="media-wrap portrait-media">
