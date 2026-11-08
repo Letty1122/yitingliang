@@ -25,33 +25,43 @@
   <main id="main">
 
 
-    <section class="hero" id="top" style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap;">
-      <div class="hero-photo reveal">
-        <img src="assets/Yiting-Liang.jpg" alt="Yiting Liang portrait" style="width:9rem;max-width:100%;object-fit:cover;border-radius:0.5rem;">
+    <section class="hero" id="top">
+      <!-- 上层：左头像｜中间姓名标题｜右侧profile，横向一行 -->
+      <div style="display:flex; align-items:center; gap:2rem; flex-wrap:wrap; margin-bottom:1.8rem;">
+        <div class="hero-photo reveal" style="flex:0 0 auto;">
+          <img src="assets/Yiting-Liang.jpg" alt="Yiting Liang portrait" style="width:9rem;max-width:100%;object-fit:cover;border-radius:0.5rem;">
+        </div>
+
+        <div class="hero-title-block reveal">
+          <p class="eyebrow">Robotics researcher · Sydney, Australia</p>
+          <h1>Yiting Liang</h1>
+          <h2 class="hero-title">Autonomous Robotics · Computer Vision · Robust Control</h2>
+        </div>
+
+        <aside class="research-console reveal" aria-label="Research profile">
+          <div class="console-head">Research profile</div>
+          <ul>
+            <li><span>01</span> Autonomous robotics</li>
+            <li><span>02</span> Vision‑guided control</li>
+            <li><span>03</span> Algorithm design</li>
+          </ul>
+          <div class="metric-row">
+            <div><strong>86.5</strong><small>UNSW WAM</small></div>
+            <div><strong>7.0</strong><small>IELTS Overall</small></div>
+          </div>
+        </aside>
       </div>
+
+      <!-- 下层：简介+按钮，单独完整一行，不参与横向并排 -->
       <div class="hero-copy reveal">
-        <p class="eyebrow">Robotics researcher · Sydney, Australia</p>
-        <h1>Yiting Liang</h1>
-        <h2 class="hero-title">Autonomous Robotics · Computer Vision · Robust Control</h2>
         <p class="lede">Master of Engineering Science in Robotics at UNSW and a Bachelor of Engineering in Artificial Intelligence from Capital Normal University, working across autonomous robotics, computer vision, robust control and machine learning.</p>
         <div class="hero-actions">
           <a class="button primary" href="#projects">Explore my work</a>
           <a class="button secondary" href="assets/Yiting-Liang-CV.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
         </div>
       </div>
-      <aside class="research-console reveal" aria-label="Research profile">
-        <div class="console-head">Research profile</div>
-        <ul>
-          <li><span>01</span> Autonomous robotics</li>
-          <li><span>02</span> Vision‑guided control</li>
-          <li><span>03</span> Algorithm design</li>
-        </ul>
-        <div class="metric-row">
-          <div><strong>86.5</strong><small>UNSW WAM</small></div>
-          <div><strong>7.0</strong><small>IELTS Overall</small></div>
-        </div>
-      </aside>
     </section>
+
 
 
     <section class="marquee" aria-label="Technical skills"><div>ROS 2 <span>·</span> Python <span>·</span> C++ <span>·</span> MATLAB <span>·</span> Gazebo <span>·</span> Computer Vision <span>·</span> Robust Control <span>·</span> Deep Learning</div></section>
