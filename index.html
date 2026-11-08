@@ -26,19 +26,20 @@
 
 
     <section id="top" style="max-width:var(--max);margin:auto;padding:7rem 1.5rem 6rem;">
-      <!-- 移除 class="hero"，避开原css的grid布局 -->
-      <!-- 上层：头像｜姓名标题｜profile面板 -->
-      <div style="display:flex; align-items:flex-start; width:100%; gap:2rem; flex-wrap:wrap; margin-bottom:1.8rem;">
+      <!-- 第一行：头像 + 姓名标题 -->
+      <div style="display:flex; align-items:flex-start; gap:2rem; flex-wrap:wrap; margin-bottom:2rem;">
         <div class="reveal" style="flex:0 0 auto;">
           <img src="assets/Yiting-Liang.jpg" alt="Yiting Liang portrait" style="width:9rem;max-width:100%;object-fit:cover;border-radius:0.5rem;">
         </div>
-
-        <div class="reveal" style="flex:0 0 auto;">
-          <p class="eyebrow">Robotics researcher · Sydney, Australia</p>
+        <div class="reveal">
+          <!-- <p class="eyebrow">Robotics researcher · Sydney, Australia</p> -->
           <h1>Yiting Liang</h1>
           <h2 class="hero-title">Autonomous Robotics · Computer Vision · Robust Control</h2>
         </div>
+      </div>
 
+      <!-- 第二行：左侧research profile，右侧简介+按钮 -->
+      <div style="display:flex; align-items:flex-start; gap:3rem; flex-wrap:wrap;">
         <aside class="research-console reveal" aria-label="Research profile" style="flex:0 0 auto;">
           <div class="console-head">Research profile</div>
           <ul>
@@ -51,17 +52,17 @@
             <div><strong>7.0</strong><small>IELTS Overall</small></div>
           </div>
         </aside>
-      </div>
 
-      <!-- 下层：简介和按钮独占一整行 -->
-      <div class="reveal">
-        <p class="lede">Master of Engineering Science in Robotics at UNSW and a Bachelor of Engineering in Artificial Intelligence from Capital Normal University, working across autonomous robotics, computer vision, robust control and machine learning.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#projects">Explore my work</a>
-          <a class="button secondary" href="assets/Yiting-Liang-CV.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
+        <div class="reveal" style="flex:1;min-width:20rem;">
+          <p class="lede">Master of Engineering Science in Robotics at UNSW and a Bachelor of Engineering in Artificial Intelligence from Capital Normal University, working across autonomous robotics, computer vision, robust control and machine learning.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">Explore my work</a>
+            <a class="button secondary" href="assets/Yiting-Liang-CV.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
+          </div>
         </div>
       </div>
     </section>
+
 
 
 
