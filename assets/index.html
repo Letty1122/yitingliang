@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yiting Liang's academic portfolio in autonomous robotics, robot perception, computer vision, and robust control.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Yiting Liang — Robotics Research Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23111111'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='serif' font-size='28' fill='white'%3EYL%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Yiting Liang, home"><span>YL</span> Yiting Liang</a>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#research">Research</a>
+      <a href="#project-experience">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+
+    <section id="top" style="max-width:var(--max);margin:auto;padding:7rem 1.5rem 6rem;">
+      <!-- 第一行：头像 + 姓名标题 -->
+      <div style="display:flex; align-items:flex-start; gap:2rem; flex-wrap:wrap; margin-bottom:2rem;">
+        <div class="reveal" style="flex:0 0 auto;">
+          <img src="assets/Yiting-Liang.jpg" alt="Yiting Liang portrait" style="width:9rem;max-width:100%;object-fit:cover;border-radius:0.5rem;">
+        </div>
+        <div class="reveal">
+          <!-- <p class="eyebrow">Robotics researcher · Sydney, Australia</p> -->
+          <h1>Yiting Liang</h1>
+          <h2 class="hero-title">Autonomous Robotics · Computer Vision · Robust Control</h2>
+          <a class="email-link" style="margin-top:0.6rem; display:inline-block;" href="mailto:YitingLiang1122@outlook.com">YitingLiang1122@outlook.com <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <div style="display:flex; align-items:flex-start; gap:3rem; flex-wrap:wrap;">
+        <!-- flex:0 0 24rem; 设置面板固定宽度，加宽profile盒子 -->
+        <aside class="research-console reveal" aria-label="Research profile" style="flex:0 0 24rem;">
+          <div class="console-head">Research interest</div>
+          <ul>
+            <li><span>01</span> Autonomous robotics</li>
+            <li><span>02</span> Vision‑guided control</li>
+            <li><span>03</span> Humanoid coordination</li>
+          </ul>
+          <div class="metric-row" style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:1.4rem;">
+            <div><strong>86.5</strong><small>UNSW WAM</small></div>
+            <div><strong>7.0</strong><small>IELTS Overall</small></div>
+          </div>
+        </aside>
+
+        <div class="reveal" style="flex:1;min-width:20rem;">
+          <p class="lede">Master of Engineering Science in Robotics at UNSW and a Bachelor of Engineering in Artificial Intelligence from Capital Normal University, working across autonomous robotics, computer vision, robust control and machine learning.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">Explore my work</a>
+            <a class="button secondary" href="assets/Yiting-Liang-CV.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+    <section class="marquee" aria-label="Technical skills"><div>ROS 2 <span>·</span> Python <span>·</span> C++ <span>·</span> MATLAB <span>·</span> Gazebo <span>·</span> Computer Vision <span>·</span> Robust Control <span>·</span> Deep Learning</div></section>
+
+    <section class="section research" id="research">
+      <div class="section-heading reveal"><p class="eyebrow">From perception to dependable autonomy.</p><h2>Research direction</h2></div>
+      <div class="research-grid">
+        <article class="research-card reveal"><span class="card-no">01</span><h3>Robust vision-guided control</h3><p>Combining probabilistic perception with adaptive control to handle uncertainty, occlusion, lighting variation and external disturbances.</p></article>
+        <article class="research-card reveal"><span class="card-no">02</span><h3>Adaptive robot learning</h3><p>Exploring sample-efficient learning and simulation-to-reality transfer for controllers that generalise beyond a single test environment.</p></article>
+        <article class="research-card reveal"><span class="card-no">03</span><h3>Coordination for humanoid teams</h3><p>Designing certified, shared-progress supervision that keeps multi-humanoid and multi-robot teams synchronised without sacrificing low-level tracking performance.</p></article>
+      </div>
+    </section>
+
+    <!-- ===== Research experience ===== -->
+    <section class="section projects" id="projects">
+      <div class="section-heading reveal"><p class="eyebrow">Research made tangible.</p><h2>Research experience</h2></div>
+
+      <article class="feature feature-video reveal">
+        <div class="media-stack">
+          <!-- 第一个视频独立 media-wrap -->
+          <div class="media-wrap">
+            <video controls preload="metadata" poster="assets/quadcopter-poster.webp" playsinline>
+              <source src="assets/quadcopter-landing.mp4" type="video/mp4">
+            </video>
+            <span class="media-label">Real-world experiment · 00:46</span>
+          </div>
+
+          <!-- 第二个视频独立 media-wrap -->
+          <div class="media-wrap">
+            <video controls preload="metadata" poster="assets/quadcopter-landing-wind-poster.webp" playsinline>
+              <source src="assets/quadcopter-landing-wind.mp4" type="video/mp4">
+            </video>
+            <span class="media-label">Wind-disturbance test · 00:19</span>
+          </div>
+        </div>
+
+        <!-- 右侧栏：文字内容 -->
+        <div class="feature-copy">
+          <p class="project-meta">01 Master's research · 2025–2026</p>
+          <h3>Autonomous Quadcopter Docking &amp; Charging</h3>
+          <p>A low-cost, infrastructure-independent landing system built with ROS 2 Humble and Gazebo Harmonic. A nested ArUco-marker perception strategy, nonlinear disturbance observer and adaptive SMC-based controller support precise landing under ground effect and lateral wind.</p>
+          <div class="results">
+            <div><strong>≤10 mm</strong><span>position error</span></div>
+            <div><strong>100%</strong><span>tested landing success</span></div>
+          </div>
+          <ul class="tags">
+            <li>ROS 2</li>
+            <li>ArUco</li>
+            <li>SMC</li>
+            <li>Gazebo</li>
+          </ul>
+          <p style="margin-top:1rem;font:400 .82rem 'IBM Plex Mono',monospace;">
+            Paper: <a href="assets/Quadcopter-ChargingDocking-Station-with-Auto-Landing-Details.pdf" target="_blank">Quadcopter-ChargingDocking-Station-with-Auto-Landing.pdf</a>
+          </p>
+        </div>
+      </article>
+
+      <!-- 02 TEMPO：多类人机器人协同搬运 -->
+      <article class="feature feature-video reverse reveal">
+        <div class="media-wrap">
+          <video controls preload="auto" playsinline>
+            <source src="assets/TEMPO_1_2.mp4" type="video/mp4">
+          </video>
+          <span class="media-label">Paired-humanoid transport · simulation</span>
+        </div>
+        <div class="feature-copy">
+          <p class="project-meta">02 Individual research · 2026–present</p>
+          <h3>TEMPO: Certified Progress Control for Multi-Humanoid Transport</h3>
+          <p>A high-level shared-progress supervisor that coordinates paired humanoids carrying a shared payload, instead of modifying the low-level robot tracker. It preserves the demonstrated relative phase between robots while avoiding coordination failures caused by rigid fixed-clock playback.</p>
+          <div class="results">
+            <div><strong>62.4 → 73.7%</strong><span>task success rate</span></div>
+            <div><strong>7.9 → 4.0 cm</strong><span>payload tracking error</span></div>
+          </div>
+          <ul class="tags">
+            <li>Humanoid robotics</li>
+            <li>Supervisory control</li>
+            <li>Simulation benchmarks</li>
+            <li>Ablation studies</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===== Project experience ===== -->
+    <section class="section projects" id="project-experience" style="padding-top:0;">
+      <div class="section-heading reveal"><p class="eyebrow">Design, perception and control.</p><h2>Project experience</h2></div>
+
+      <article class="feature feature-video reverse reveal" style="border-top:1px solid var(--line);padding:3.5rem 0;">
+        <div class="media-wrap portrait-media">
+          <video controls preload="metadata" poster="assets/micromouse-poster.webp" playsinline>
+            <source src="assets/micromouse-demo.mp4" type="video/mp4">
+          </video>
+          <span class="media-label">Maze navigation demo · 00:52</span>
+        </div>
+        <div class="feature-copy">
+          <p class="project-meta">03 Robotics design · 2025</p>
+          <h3>Micromouse Maze-Navigation Robot</h3>
+          <p>Autonomous mapping and shortest-path navigation using Flood Fill and BFS, reducing navigation time by 15% in test mazes. PID motor control was tuned for stable movement across uneven maze surfaces, supported by full hardware assembly and system debugging over 20+ consecutive runs.</p>
+          <ul class="tags"><li>Flood Fill</li><li>BFS</li><li>PID</li><li>Embedded systems</li></ul>
+        </div>
+      </article>
+
+      <article class="feature feature-video reveal" style="border-top:1px solid var(--line);padding:3.5rem 0;">
+        <div class="media-wrap">
+          <img src="assets/remote-sensing.webp" alt="Remote-sensing classification workflow comparing machine learning and deep learning" loading="lazy">
+        </div>
+        <div class="feature-copy">
+          <p class="project-meta">04 Computer vision · 2025</p>
+          <h3>Remote Sensing Image Classification</h3>
+          <p>Compared handcrafted-feature Random Forest models with fine-tuned ResNet18 and EfficientNet across 15 aerial scene categories, analysing the trade-off between model complexity and real-time applicability for robotic aerial surveillance.</p>
+          <div class="results">
+            <div><strong>89%</strong><span>test accuracy</span></div>
+            <div><strong>+17 pp</strong><span>over traditional methods</span></div>
+          </div>
+          <ul class="tags">
+            <li>PyTorch</li>
+            <li>EfficientNet</li>
+            <li>HOG / LBP / GLCM</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- GNN for RGB-D Semantic Segmentation -->
+      <article class="feature feature-video reverse reveal" style="border-top:1px solid var(--line);padding:3.5rem 0;">
+        <div class="media-wrap">
+          <img src="assets/rgbd-segmentation.webp" alt="RGB-D images, depth maps and semantic segmentation results" loading="lazy">
+        </div>
+        <div class="feature-copy">
+          <p class="project-meta">05 3D perception · 2023</p>
+          <h3>GNN for RGB-D Semantic Segmentation</h3>
+          <p>Converted RGB-D input into HHA-encoded point clouds, built graph structures with KNN, and applied graph neural networks to indoor semantic segmentation.</p>
+          <ul class="tags">
+            <li>GNN</li>
+            <li>RGB-D</li>
+            <li>HHA</li>
+            <li>Point clouds</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Vision-Guided 6-DOF Manipulator -->
+      <article class="feature feature-video reveal" style="border-top:1px solid var(--line);padding:3.5rem 0 0;">
+        <div class="media-wrap">
+          <img src="assets/plc-system.webp" alt="Rockwell Logix5000 PLC hardware used during the industrial automation internship" loading="lazy">
+        </div>
+        <div class="feature-copy">
+          <p class="project-meta">06 Robotic manipulation · 2025</p>
+          <h3>Vision-Guided 6-DOF Manipulator</h3>
+          <p>Homography and ArUco calibration, custom inverse kinematics, artificial potential field path planning and RTDE control for precise pick-and-place.</p>
+          <ul class="tags">
+            <li>ArUco</li>
+            <li>Inverse Kinematics</li>
+            <li>Potential-field planning</li>
+            <li>RTDE</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===== Internship experience ===== -->
+    <section class="section projects" id="internship" style="padding-top:0;">
+      <div class="section-heading reveal"><p class="eyebrow">Robotics in industry.</p><h2>Internship experience</h2></div>
+
+      <article class="feature feature-video reverse reveal" style="border-top:1px solid var(--line);padding:3.5rem 0 0;">
+        <div class="media-wrap">
+          <img src="assets/plc-system.webp" alt="Rockwell Logix5000 PLC hardware used during the industrial automation internship" loading="lazy">
+        </div>
+        <div class="feature-copy">
+          <p class="project-meta">07 Beijing Tianyu Zhiyuan Technology · 2024</p>
+          <h3>Python & Algorithm Development Intern&Python & Algorithm Development Intern</h3>
+          <p>Built a millisecond-level software SOE module for Logix5000 PLCs, replacing dedicated SOE hardware with unlimited-point, reusable event recording. Developed a hybrid A* and dynamic-programming routing algorithm for multi-zone automotive PBS conveyor scheduling, validated with control engineers for PLC compatibility.</p>
+          <div class="results">
+            <div><strong>99.8%</strong><span>scheduling accuracy</span></div>
+            <div><strong>100+</strong><span>dynamic requests handled</span></div>
+          </div>
+          <ul class="tags">
+            <li>PLC</li>
+            <li>Logix5000</li>
+            <li>A* / DP routing</li>
+            <li>SOE module</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section class="section experience" id="education">
+      <div class="section-heading reveal"><p class="eyebrow">Academic journey.</p><h2>Education</h2></div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><time>2024—2026</time><div><p class="project-meta">University of New South Wales · Sydney</p><h3>Master of Engineering Science — Robotics</h3><p>Completed with an 86.5 WAM. Coursework includes Advanced Autonomous Systems (98), Control of Robotic Systems (92), Feedback Control Systems (92), Robust &amp; Linear Control, and Robot Design.</p></div></article>
+        <article class="timeline-item reveal"><time>2020—2024</time><div><p class="project-meta">Capital Normal University · Beijing</p><h3>Bachelor of Engineering — Artificial Intelligence</h3><p>Built foundations in machine learning, operating systems, algorithms, natural language processing and intelligent robot simulation. GPA 3.19/5.0.</p></div></article>
+      </div>
+      <div class="honours reveal"><span>Awards</span><p>Third Prize, University-Level Programming Competition · Third-Class Scholarship</p></div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-inner reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s build dependable autonomy.</h2>
+        <p>I am committed to conducting scientific research that advances robotics.</p>
+        <a class="email-link" href="mailto:YitingLiang1122@outlook.com">YitingLiang1122@outlook.com <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© <span id="year"></span> Yiting Liang</p><a href="#top">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
